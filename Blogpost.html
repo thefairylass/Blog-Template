@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	 <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bitter:wght@300;400;500;700&family=Mukta:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+	<title>Blogpost</title>
+	<link rel="stylesheet" href="Blogpost.css" />
+</head>
+<body>
+	<div class="hero">
+		<h1> A Blog Post</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, labore nam consequuntur voluptatibus. Qui, debitis nihil suscipit! Quasi, velit aperiam sint doloremque sunt delectus tenetur eum quae quo eligendi vero.</p>
+		<hr>
+	</div>
+	<div class="content">
+		<p class="info"> 07.27.2025 | <span>ALL ABOUT CSS BLOG<span></p>
+		<h2>All about Typography</h2>
+		<p class="headline"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, reprehenderit, corporis earum vel quae <code>illum aut</code> odit veritatis odio expedita accusantium similique rerum tempore dolore aspernatur alias ipsa sapiente ipsam.</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, quod, voluptates enim <code>ducimus nostrum ipsam</code> suscipit debitis sit neque fugit veritatis et molestias nihil assumenda voluptatibus omnis fuga vitae aut!</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, ex molestiae fugit accusantium porro mollitia. Quisquam, numquam, suscipit perferendis inventore saepe harum accusamus maxime dolores neque dicta quas fugiat sunt!</p>
+		<blockquote class="quote">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, in, iure amet tempora dolorum quaerat soluta reiciendis reprehenderit porro dolore nulla obcaecati provident repudiandae at nemo suscipit id veritatis voluptatibus.<cite>- A wise person</cite></blockquote>
+		<hr>
+		<h3>New Headline</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, nisi, voluptatum nostrum perferendis ea corrupti commodi temporibus esse impedit porro. Magnam, rem reprehenderit laborum fugit vitae rerum aliquam est dolorem.</p>
+		<h4>Heading 4</h4>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, impedit, voluptas, unde tempora deleniti autem distinctio necessitatibus commodi nostrum inventore minima vitae neque eius nihil dignissimos laboriosam placeat mollitia eligendi.</p>
+		<h5>Heading 5</h5>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, enim, totam, et labore aspernatur voluptatibus inventore obcaecati fugiat ipsa maiores libero debitis officiis. Error perferendis repudiandae molestiae nostrum voluptatem sequi.</p>
+		<h6>Heading 6</h6>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A voluptates quis dolore. Odit, perferendis, nemo assumenda voluptate necessitatibus rem facere quam ab recusandae dolore excepturi cumque molestias nisi impedit adipisci!</p>
+	
+		<h3>Common Font Sizing Approaches</h3>
+
+		<h4><code>px</code> (pixels)</h4>
+		
+		<p> Pixels are the simplest way to hard code your font size. By default the browser sets the root font size to <code>16px</code>, but you can change the font size in the <code>body</code> element or any other HTML element by setting <code>font-size</code> to any number of <code>px</code>.</p>
+		
+		<h4><code>em</code></h4>
+		
+		<p><code>em</code> units size font relative to the parent element. For example, if the <code>body</code> element is <code>16px</code>, and a nested <code>div</code> element's font size is set to <code>1.5em</code>, the browser will multiply <code>16px</code> x 1.5, resulting in 24px font in the div.</p>
+		
+		<h4><code>rem</code> (root em)</h4>
+		
+		<p>Root <code>em</code> units are similar to <code>em</code>, but they are relative to the root font size instead of the parent element of whatever is being styled. For example, if the root font size (the font size of the <code>body</code> element) is set to 16px, and we have a p element nested many layers down with a font-size set to <code>2rem</code>, that paragraph will have 32px font. If the body font size ever changes, this paragraph will also change accordingly.</p>
+		
+		<h4>Which one do I use?</h4>
+		
+		<p>Great question! Generally, people try to stick to using <code>em</code> or <code>rem</code> over <code>px</code>, since they make responsive typography that scales up and down across different device widths much easier. Using <code>px</code> for your font sizes is not as dynamic, and you may find that writing media queries to update all the various element font sizes in pixels at different screen widths is not the most scalable approach to typography.</p>
+		
+		<p>Between <code>em</code> and <code>rem</code>, rem has a nice advantage of all elements being relative to one single root font value, where nested elements with parent/child font size dependencies can still be hard to manage with <code>em</code> units. When writing responsive styles, <code>rem</code> allows you to simply update the root font size at different screen sizes and all elements using <code>rem</code> units will adjust themselves accordingly creating a super easy-to-manage typography size system.</p>
+		
+		<p>In small projects you may not have an issues hard coding pixelage, but it's always important to understand the drawbacks of writing styles that may not be responsive or dynamic.</p>
+			</div>
+	
+	<footer>
+		<ul>
+			<li>
+				<a href="privacy">Privacy Policy</a>
+			</li>
+			<li>
+				<a href="terms">Terms & Conditions</a>
+			</li>
+			<li>
+				<a href="about">About</a>
+			</li>
+			<li>
+				<a href="contact">Contact us</a>
+			</li>
+			<li>
+				<a href="more">More Info</a>
+			</li>
+		</ul>
+	</footer>
+</body>
+</html>
